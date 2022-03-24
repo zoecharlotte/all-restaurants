@@ -1,0 +1,19 @@
+<h1> Restaurants</h1>
+<%= form_tag restaurants_path, method: :get do %>
+  <%= text_field_tag :query,
+    params[:query],
+    class: "form-control",
+    placeholder: "Search by city"
+  %>
+  <%= submit_tag "Search", class: "btn btn-primary" %>
+<% end %>
+<div class="all-restaurants-grid">
+  <div class="each-restaurant-grid">
+    <%= link_to "+ new", new_restaurant_path %>
+  </div>
+  <% @restaurants.each do |restaurant| %>
+    <div class="each-restaurant-grid">
+      <%= link_to restaurant.name, restaurant_path(restaurant) %>
+    </div>
+  <% end %>
+</div>

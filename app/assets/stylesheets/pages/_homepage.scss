@@ -1,0 +1,40 @@
+.homepage-body {
+  background-image: url('https://images.unsplash.com/photo-1532939624-3af1308db9a5?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80');
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: white;
+}
+
+body {
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+
+.homepage-header {
+  h1 {
+  margin: 5px;
+  }
+}
+
+.homepage-text {
+  display: flex;
+  justify-content: center;
+  h3 {
+  width: 950px;
+  text-align: center;
+  margin: 5px;
+  }
+}
+
+.homepage-button {
+  border-radius: 20px;
+  padding: 10px;
+  background-color: black;
+  text-align: center;
+  width: 300px;
+  margin: 5px;
+  a {
+    color: white;
+    text-decoration: none;
+  }
+}

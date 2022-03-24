@@ -1,0 +1,9 @@
+<h2><%= @restaurant.name %> - <%= @restaurant.rating %></h2>
+<h3><%= @restaurant.address %></h3>
+<h4><%= @restaurant.city %></h4>
+<h4><%= @restaurant.highlights %></h4>
+<h4><%= "never been" if !@restaurant.verified %></h4>
+
+<%= link_to "back", restaurants_path %>
+<%= link_to "update", edit_restaurant_path %>
+<%= link_to "delete", restaurant_path(@restaurant), method: :delete, data: { confirm: "are you sure?" }%>
