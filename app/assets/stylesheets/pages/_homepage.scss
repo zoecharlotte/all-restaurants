@@ -1,41 +1,52 @@
 
-.homepage-body {
-  background-image: url('https://images.unsplash.com/photo-1532939624-3af1308db9a5?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80');
+body {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  width: 100vw;
+}
+
+.homepage-body-content {
+  height: 100%;
+  width: 100%;
+  background-image: url('breakfast.jpg');
   background-size: cover;
   background-repeat: no-repeat;
-  color: white;
-}
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: $navy;
+  font-family: $body-font;
 
-body {
-  font-family: $body-font
-}
-
-
-.homepage-header {
-  h1 {
-  margin: 5px;
-  }
 }
 
 .homepage-text {
+  padding-bottom: 350px;
   display: flex;
+  flex-direction: column;
   justify-content: center;
+  width: 900px;
   h3 {
-  width: 950px;
   text-align: center;
   margin: 5px;
   }
+}
+
+.center-homepage-button {
+  display: flex;
+  justify-content: center;
 }
 
 .homepage-button {
   border-radius: 20px;
   padding: 10px;
-  background-color: blue;
+  background-color: $off-white;
   text-align: center;
-  width: 300px;
   margin: 5px;
+  width: 40%;
   a {
-    color: white;
+    color: $navy;
     text-decoration: none;
   }
 }
