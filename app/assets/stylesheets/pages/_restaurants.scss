@@ -11,14 +11,17 @@ form {
 .each-restaurant-grid {
   display: flex;
   justify-content: center;
-  background-color: black;
+  background-color: $off-white;
   align-items: top;
   a {
-    color: white;
+    font-family: $body-font;
+    color: $navy;
     text-decoration: none;
   }
 }
 
 h1 {
+  font-family: $body-font;
   text-align: center;
+  color: $navy;
 }
